@@ -5,5 +5,5 @@ genrule(
 	  "gmp.h",
 	],
 	local=1,
-    cmd = "position=`pwd`; cp -r ./external/gnuimage /tmp/gnuimage && cd /tmp/gnuimage; ./configure && make && make install; cp /usr/local/include/gmp.h $$position/$(@D)"
+  cmd = "curdir=`pwd`; cp -r ./external/gnuimage /tmp/gnuimage && cd /tmp/gnuimage; ./configure && make && make install; cp /usr/local/include/gmp.h $$curdir/$(@D)"
 )

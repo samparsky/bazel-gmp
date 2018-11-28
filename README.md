@@ -1,4 +1,4 @@
-# RUN
+# BUILD
 ```sh
 $ cd <dir>
 $ bazel build @gnuimage//:gmplib
